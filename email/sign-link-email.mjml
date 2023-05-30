@@ -1,0 +1,154 @@
+<mjml>
+  <mj-head>
+    <mj-font
+      name="Poppins"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <mj-attributes>
+      <mj-image padding="0px" />
+      <mj-section padding="0px" />
+      <mj-table padding="0px" />
+      <mj-wrapper
+        padding="28px 24px"
+        background-color="#FDFDFD"
+        border-radius="14px"
+      />
+      <mj-text
+        font-size="14px"
+        line-height="160%"
+        color="#333333"
+        font-family="Poppins, sans-serif"
+        padding="0px"
+      />
+      <mj-button
+        css-class="btn-link"
+        line-height="100%"
+        font-size="12px"
+        font-weight="500"
+        font-family="Poppins, sans-serif"
+        color="#333333"
+        border-radius="24px"
+        padding="8px"
+        inner-padding="0"
+        background-color="#FFC71F"
+      />
+      <mj-class
+        name="secondary-button"
+        background-color="#2EAAED"
+        color="#FDFDFD"
+      />
+      <mj-class
+        name="text-xl"
+        font-size="28px"
+        line-height="120%"
+        font-family="Poppins, sans-serif"
+        font-weight="700"
+        color="#74A57F"
+      />
+
+      <mj-class
+        name="text-lg"
+        font-size="20px"
+        line-height="140%"
+        font-family="Poppins, sans-serif"
+        font-weight="600"
+        color="#333333"
+      />
+
+      <mj-class
+        name="text-sm"
+        font-size="12px"
+        line-height="160%"
+        align="left"
+        font-family="Poppins, sans-serif"
+        font-weight="400"
+        color="#333333"
+      />
+
+      <mj-class
+        name="text-xs"
+        font-size="10px"
+        line-height="180%"
+        padding-bottom="4px"
+        align="left"
+        font-family="Poppins, sans-serif"
+        font-weight="400"
+        color="#333333"
+      />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .btn-link a { padding: 12px 24px; border-radius: 24px; border: 1px solid
+      black }.book-image-wrapper { height: 100px; } td{padding-bottom:5px}
+    </mj-style>
+    <mj-title>Your Book Offer Has Been Sent!</mj-title>
+  </mj-head>
+
+  <!--? ---------------------------------- Body ---------------------------------- -->
+
+  <mj-body background-color="#EEE5E9" css-class="body" width="480px">
+    <mj-spacer height="12px" />
+    <mj-wrapper background-color="transparent" padding="16px 8px">
+      <mj-body>
+        <mj-wrapper>
+          <!--?-------------------------- Logo ---------------------------->
+
+          <mj-section>
+            <mj-column>
+              <mj-image
+                src="{{logo}}"
+                width="250px"
+                alt="Buy local books network logo"
+              />
+            </mj-column>
+          </mj-section>
+
+          <!--?-------------------------- Title ---------------------------->
+
+          <mj-section>
+            <mj-column padding="32px 0px 32px">
+              <mj-text mj-class="text-xl" align="center" color="#333333">
+                login via email link
+              </mj-text>
+            </mj-column>
+          </mj-section>
+
+          <!--?-------------------------- Message ---------------------------->
+
+          <mj-section>
+            <mj-column>
+              <mj-text font-weight="600">Hello {{c1}}!</mj-text>
+              <mj-text
+                >Please click the button below to sign in to your account.
+              </mj-text>
+            </mj-column>
+          </mj-section>
+          <mj-section padding="5px">
+            <mj-column padding="12px 0 24px">
+              <mj-button href="{{cta1}}">Sign in</mj-button>
+            </mj-column>
+          </mj-section>
+          <mj-section>
+            <mj-column>
+              <mj-text mj-class="text-sm">
+                If the button doesn't work, you can easily paste the link below
+                into your browser.
+              </mj-text>
+              <mj-text mj-class="text-sm" color="#4F5AD7" padding-bottom="12px">
+                {{cta1}}
+              </mj-text>
+              <mj-text mj-class="text-xs" padding-bottom="12px">
+                The link will expire within 24h
+              </mj-text>
+              <mj-text mj-class="text-xs" color="#BDBDBD">
+                if you didn’t request login, you can safely ignore this email
+              </mj-text>
+            </mj-column>
+          </mj-section>
+        </mj-wrapper>
+
+        <mj-spacer />
+      </mj-body>
+    </mj-wrapper>
+    <mj-spacer height="24px" />
+  </mj-body>
+</mjml>
